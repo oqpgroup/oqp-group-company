@@ -571,3 +571,54 @@ img{max-width:100%;display:block}
     white-space: nowrap !important;
   }
 }
+/* FINAL SPACING FIX — BUSINESS + CREATOR */
+
+.hero-visual {
+  position: relative !important;
+  min-height: 520px !important;
+}
+
+/* Business Strategy */
+.hero-visual .card-a {
+  top: 8px !important;
+  left: 8px !important;
+  right: auto !important;
+  bottom: auto !important;
+  z-index: 20 !important;
+}
+
+/* Creator & Live Commerce */
+.hero-visual .creator-inline {
+  position: absolute !important;
+  top: auto !important;
+  left: 50% !important;
+  right: auto !important;
+  bottom: 8px !important;
+  transform: translateX(-50%) !important;
+
+  margin: 0 !important;
+  z-index: 20 !important;
+}
+
+/* MOBILE */
+@media (max-width: 620px) {
+
+  .hero-visual {
+    min-height: 500px !important;
+  }
+
+  .hero-visual .card-a {
+    top: 4px !important;
+    left: 4px !important;
+    font-size: .62rem !important;
+    padding: 9px 12px !important;
+  }
+
+  .hero-visual .creator-inline {
+    bottom: 4px !important;
+    max-width: 90% !important;
+    font-size: .62rem !important;
+    padding: 9px 12px !important;
+    white-space: nowrap !important;
+  }
+}
