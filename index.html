@@ -64,6 +64,7 @@
             <div class="mini-card card-a">Business Strategy</div>
             
             <div class="mini-card card-c">Market Entry</div>
+            <div class="creator-inline">Creator & Live Commerce</div>
           </div>
         </div>
       </section>
@@ -415,5 +416,26 @@
     padding: 10px 14px !important;
     white-space: normal !important;
     line-height: 1.4;
+  }
+}
+/* Creator & Live Commerce — safe inline card */
+.creator-inline{
+  margin-top:16px;
+  align-self:flex-end;
+  background:#fff;
+  border:1px solid rgba(13,90,70,.12);
+  box-shadow:var(--shadow);
+  padding:12px 16px;
+  border-radius:999px;
+  font-size:.78rem;
+  font-weight:800;
+  color:var(--green-2);
+}
+
+@media(max-width:620px){
+  .creator-inline{
+    margin-top:12px;
+    font-size:.68rem;
+    padding:10px 13px;
   }
 }
