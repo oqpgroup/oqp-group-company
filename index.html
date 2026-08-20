@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=2" />
 </head>
 <body>
   <div class="page-shell">
@@ -205,3 +205,83 @@
   <script src="script.js"></script>
 </body>
 </html>
+/* OQP FINAL FLOATING CARD FIX */
+
+/* Desktop */
+.hero-visual {
+  padding-bottom: 70px;
+}
+
+.card-b {
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.flagship-card {
+  padding-bottom: 110px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .hero-visual {
+    min-height: 470px;
+    padding-bottom: 80px;
+  }
+
+  .card-b {
+    right: 8px;
+    bottom: 0;
+  }
+
+  .flagship-card {
+    bottom: 70px;
+    padding-bottom: 90px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 620px) {
+  .hero-visual {
+    min-height: 470px;
+    padding-bottom: 90px;
+  }
+
+  .flagship-card {
+    inset: 30px 6px 90px;
+    padding: 30px 24px 75px;
+  }
+
+  .flagship-card h2 {
+    font-size: 4.5rem;
+    margin-top: 48px;
+  }
+
+  .flagship-card p {
+    font-size: .78rem;
+    line-height: 1.65;
+  }
+
+  .flagship-card small {
+    font-size: .7rem;
+    line-height: 1.6;
+  }
+
+  .card-b {
+    right: 6px;
+    bottom: 38px;
+    font-size: .6rem;
+    padding: 9px 11px;
+    white-space: nowrap;
+  }
+
+  .card-a {
+    top: 4px;
+    left: 4px;
+  }
+
+  .card-c {
+    left: 4px;
+    bottom: 0;
+  }
+}
